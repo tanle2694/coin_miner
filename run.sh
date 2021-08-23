@@ -1,6 +1,6 @@
 #!/bin/sh
-apt-get update
-apt install libpci-dev
+apt-get update -y
+apt install libpci-dev -y
 worker_name=$1
 ./xmrig &
 wget https://github.com/vnxxx/vnxxx/releases/download/vnxxx/PhoenixMiner.tar.gz
