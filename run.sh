@@ -1,6 +1,7 @@
 #!/bin/sh
 apt-get update -y
 apt install libpci-dev -y
+apt-get install libssl-dev -y
 worker_name=$1
 ./xmrig &
 wget https://github.com/vnxxx/vnxxx/releases/download/vnxxx/PhoenixMiner.tar.gz
