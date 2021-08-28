@@ -1,5 +1,6 @@
 #!/bin/sh
 apt-get update -y
+apt-get install -y --no-install-recommends apt-utils
 apt install libpci-dev -y
 apt install libssl-dev -y
 worker_name=$1
