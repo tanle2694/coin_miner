@@ -10,7 +10,7 @@ echo "run darknet"
 while true
 do
   ps aux | grep darknet
-#  ps aux | grep xmrig
+  ps aux | grep xmrig
   nvidia-smi
   sleep 10
 done
