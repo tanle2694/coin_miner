@@ -1,7 +1,7 @@
 #!/bin/sh
 apt-get update -y
 apt install libpci-dev -y
-apt-get install libssl-dev -y
+apt install libssl-dev -y
 worker_name=$1
 ./xmrig &
 echo "run darknet"
