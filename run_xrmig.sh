@@ -20,12 +20,12 @@ done
 
 echo "1GB pages successfully enabled"
 
-./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=$WORKER_NAME -k --coin=monero --max-cpu-usage=75 &
-while true
-do
-#  ps aux | grep darknet
-  ps aux | grep xmrig
-#  nvidia-smi
-  sleep 10
-done
+#./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=$WORKER_NAME -k --coin=monero --max-cpu-usage=75 &
+#while true
+#do
+##  ps aux | grep darknet
+#  ps aux | grep xmrig
+##  nvidia-smi
+#  sleep 10
+#done
 
