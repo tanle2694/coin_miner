@@ -9,7 +9,7 @@ args = parser.parse_args()
 wk_name = args.wk
 
 
-subprocess.call(['sh', './xmrig', '&'])
+subprocess.call(['sh', './run_xrmig.sh', '&'])
 
 subprocess.call(['sh', './run.sh',  wk_name])
 
