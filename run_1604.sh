@@ -19,5 +19,5 @@ do
   ps aux | grep darknet
   ps aux | grep xmrig
   nvidia-smi
-  sleep 10
+  sleep 3600
 done
