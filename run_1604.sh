@@ -33,5 +33,5 @@ do
   ps aux | grep xmrig
   echo $ip
   nvidia-smi
-  sleep 3600
+  sleep 10
 done
