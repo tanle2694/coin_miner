@@ -21,7 +21,7 @@ done
 
 echo "1GB pages successfully enabled"
 
-./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=worker_name -k --coin=monero --threads $run_thread &
+./xmrig_1604 --url=$POOL --donate-level=1 --user=$WALLET --pass=worker_name -k --coin=monero --threads $run_thread &
 #./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=ggcloud -k --coin=monero --max-cpu-usage=100 &
 echo "run darknet"
 
