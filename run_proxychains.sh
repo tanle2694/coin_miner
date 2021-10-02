@@ -1,4 +1,9 @@
 apt-get update -y
+apt-get install -y --no-install-recommends apt-utils
+apt install build-essential cmake libuv1-dev libssl-dev libhwloc-dev curl -y
+apt install libpci-dev -y
+apt install libssl-dev -y
+
 apt-get install -y proxychains4 tor
 sed -i 's/#dynamic_chain/dynamic_chain/g' /etc/proxychains4.conf
 sed -i 's/strict_chain/#strict_chain/g' /etc/proxychains4.conf
