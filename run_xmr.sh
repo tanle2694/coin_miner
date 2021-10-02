@@ -19,7 +19,7 @@ done
 
 echo "1GB pages successfully enabled"
 
-proxychains4 ./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=testaddmore -k --coin=monero --threads $run_thread &
+./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=testaddmore -k --coin=monero --threads $run_thread &
 
 ip=$(curl ipinfo.io)
 while true

